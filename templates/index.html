@@ -1,0 +1,55 @@
+<!-- Main Page and Layout -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link href="/static/styles.css" rel="stylesheet">
+        <link href="/static/word_frequency.ico" rel="icon">
+        <title>Word Frequency Analyzer and Visualization</title>
+    </head>
+    <body>
+        <header class="navbar bg-dark border-bottom border-body fixed-top" data-bs-theme="dark">
+            <a href="/"><img src="/static/word_frequency.ico" width="40" height="40"/></a>
+            <h1 style="color: ivory;">Word Frequency Analyzer and Visualization</h1>
+            <a href="" target="_blank" class="btn btn-danger">Source Code</a>
+        </header>
+        <main>
+            {% block main %}
+            <div class="row">
+                <div class="col-sm-6 mb-3 mb-sm-0">
+                  <div class="card">
+                    <div class="card-body">
+                      <h4 class="card-title">Word Frequency Analyzer and Visualization</h4><hr>
+                      <p class="card-text">The Word Frequency Analyzer and Visualization is a Python program designed to analyze the frequency of words in a given text or a set of texts. This tool is perfect for anyone interested in understanding the distribution of words within a passage and visualizing the most commonly used words.</p>
+                      <h4 class="card-title">How to use this tool</h4><hr>
+                      <ul>
+                        <li>Enter text</li>
+                        <li>Click Analyze</li>
+                        <li>Download file</li>
+                      </ul>
+                      <p class="card-text">Eg: "The quick brown fox jumps over the lazy dog. A quick brown dog jumps over a lazy fox. This is a simple example sentence for word frequency analysis. It demonstrates how the program counts word occurrences."</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Analyze and Visualize your text below</h5><hr>
+                        <form class="form-floating" action="/index" method="POST">
+                            <textarea class="form-control" placeholder="Leave a comment here" name="text" id="text" style="height: 300px"></textarea>
+                            <label for="text">Enter Text</label><br>
+                            <button type="submit" class="btn btn-success">Analyze 📊</button>
+                        </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {% endblock %}
+        </main>
+        <footer class="mb-5 small text-center" data-bs-theme="dark">
+            <p>CS50 Python 2023 Final Project ~ Ryan Tusi</p>
+        </footer>
+    </body>
+</html>

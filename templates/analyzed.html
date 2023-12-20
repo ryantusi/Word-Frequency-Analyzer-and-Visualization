@@ -1,0 +1,13 @@
+<!-- Analyzed Page -->
+{% extends "index.html" %}
+
+{% block main %}
+<div class="card text-bg-dark">
+    <img src="/static/barchart.png" class="card-img" alt="bar chart">
+    <div class="card-img-overlay">
+      <form action="/analyzed" method="POST">
+        <button type="submit" class="btn btn-dark">Download PNG 💾</button>
+      </form>
+    </div>
+</div>
+{% endblock %}

@@ -1,7 +1,7 @@
 # Word Frequency Analyzer and Visualization 📊
 ### Video demo: [click here](https://youtu.be/i3V3fnvyWwE)
 
-Welcome to the Word Frequency Analyzer and Visualization project repository! This Python Flask-based web application is designed to analyze word frequency in a given text and visually represent the most common words. This README provides a comprehensive guide to understand, set up, and utilize this project effectively. The Word Frequency Analyzer and Visualization is a Python program designed to analyze the frequency of words in a given text or a set of texts. This tool is perfect for anyone interested in understanding the distribution of words within a passage and visualizing the most commonly used words.
+Welcome to the Word Frequency Analyzer and Visualization project repository! This Python Flask-based web application is designed to analyze word frequency in a given text and visually represent the most common words with module creation inheriting the concept of Object-Oriented-Programming in python. This README provides a comprehensive guide to understand, set up, and utilize this project effectively. The Word Frequency Analyzer and Visualization is a Python program designed to analyze the frequency of words in a given text or a set of texts. This tool is perfect for anyone interested in understanding the distribution of words within a passage and visualizing the most commonly used words.
 
 ## Table of Contents
 

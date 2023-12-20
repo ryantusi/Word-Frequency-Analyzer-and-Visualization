@@ -57,6 +57,7 @@ The Word Frequency Analyzer and Visualization project is an interactive web appl
 3. **Usage**:
    - Enter text in the provided field on the homepage.
    - Click the "Analyze" button to process the text and view word frequencies.
+   - Click "Download" to download the PNG file of your word analysis
 
 ### Screenshots
 ![screenshot1](static/barchart.png)
@@ -75,6 +76,8 @@ The Word Frequency Analyzer and Visualization project is an interactive web appl
 - SQLite3
 - Matplotlib
 - NLTK
+- Pytest
+- CS50 
 
 ## Contributing
 

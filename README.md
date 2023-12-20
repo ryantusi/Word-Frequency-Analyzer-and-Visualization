@@ -35,9 +35,9 @@ The Word Frequency Analyzer and Visualization project is an interactive web appl
 
 ### Files:
 
-- `project.py`: Contains the `WordFrequency` class for text analysis and visualization.
+- `word_frequency.py`: Contains the `WordFrequency` class for text analysis and visualization.
 - `app.py`: (Flask) Main application script for routing, data manipulation, and uses WordFrequency class to analyze and visualize data.
-- `test_project.py`: Python testing for the WordFrequency.py
+- `test_WordFrequency.py`: Python testing for the WordFrequency.py
 - `frequency.db`: Database which contains two tables `text` - stores input text of users and `visits` - stores button click and download counts.
 
 ## Usage
@@ -45,11 +45,13 @@ The Word Frequency Analyzer and Visualization project is an interactive web appl
 ### Running the Application
 
 1. **Setup**:
-   - Ensure necessary dependencies are installed (`nltk`, `matplotlib`).
-   - Run `pip install nltk matplotlib` to install missing libraries.
+   - Ensure necessary dependencies are installed (`nltk`, `matplotlib`, `cs50`, `pytest`).
+   - Run `pip install nltk matplotlib cs50 pytest` to install missing libraries.
+   - Run `python -m nltk.downloader stopwords punkt`
+   - Run `pytest test_WordFrequency.py` to test WordFrequency class from the module.
 
 2. **Start the Flask App**:
-   - Run `python app.py` in your terminal.
+   - Run `flask run` in your terminal.
    - Access the application at `http://localhost:5000/`.
 
 3. **Usage**:

@@ -1,0 +1,17 @@
+body {
+  background: #76b852; /* fallback for old browsers */
+  background: rgb(141,194,111);
+  background: linear-gradient(90deg, #E55D87 0%, #5FC3E4 50%);
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+    position: fixed;
+}
+
+main {
+    padding: 100px 5% 5% 5%;
+}
+

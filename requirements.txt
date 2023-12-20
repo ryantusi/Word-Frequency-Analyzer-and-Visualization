@@ -1,0 +1,4 @@
+Flask==2.0.2
+matplotlib==3.4.3
+cs50==9.0.1
+nltk==3.6.5
